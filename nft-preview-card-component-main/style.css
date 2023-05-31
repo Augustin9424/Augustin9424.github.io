@@ -1,0 +1,132 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content:  center;
+    padding: 25px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+/* ******* CARD******* */
+
+.card{
+background-color: hsl(216, 50%, 16%);
+max-width: 350px;
+padding: 24px;
+border-radius: 15px;
+box-shadow: 0px 20px 25px 15px rgba(0, 0,0,0.05);
+}
+
+.card-image{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-image::after{
+   color: hsl(178, 100%, 50%);
+   content: url(images/icon-view.svg);
+   background: hsl(178, 100%, 50%);
+   position: absolute;
+   inset: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: all 0.25s ease;   
+}
+
+.card-image:hover::after{
+    opacity: 0.75;
+}
+
+.card-image img{
+    width: 100%;
+    display: block;   
+}
+
+.card-body{
+    padding: 23px 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 15px;
+}
+
+.card-title{
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card-title:hover{
+    color:hsl(178, 100%, 50%) ;
+}
+
+.card-text{
+    color: hsl(215, 32%, 27%);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 23px;
+}
+ .wrapper{
+display: flex;
+justify-content:space-between;
+align-items: center;
+}
+
+.price .card-clock{
+display: flex;
+align-items: center;
+font-weight: 500;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+}
+
+.card-icon{
+   margin-right: 6px; 
+}
+
+.card-clock{
+color:hsl(215, 32%, 27%);
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-image{
+    width: 34px;
+    height: 34px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-right: 15px;   
+}
+
+.auhor-name{
+    color:hsl(215, 32%, 27%);
+    font-weight: 500;
+}
+
+.author-name a{
+    color: white;
+    font-weight: 400;
+}
+
+.author-name a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+footer{
+position: absolute;
+bottom: 0;
+width: 50%;
+height: 2.5rem;
+}
+
