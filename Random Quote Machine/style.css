@@ -1,0 +1,43 @@
+#wrapper{
+    align-items:center;
+    display:flex;
+    justify-content:center;
+  }
+  #quote-box {
+    width: 450px;
+    padding: 40px 50px;
+    display: table;
+    flex-direction: column;
+    border-radius: 3px;
+    position: relative;
+    background-color: #fff; 
+  }
+  
+  #text {
+    margin: 20px 0;
+  }
+  
+  #new-quote {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #tweet-quote {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1da1f2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer{
+    display:block;
+    text-align:center;
+    align-items:center;
+  }
+  .footer a{
+    text-decoration: none;
+    color:black;
+  }
+  
